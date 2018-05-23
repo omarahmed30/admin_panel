@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class=" text-center text-info headings">Teachers</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+      <th>Salary</th>
+      <th>Education</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @teachers.each do |teacher| %>
+      <tr>
+        <td><%= teacher.firstname %></td>
+        <td><%= teacher.lastname %></td>
+        <td><%= teacher.age %></td>
+        <td><%= "$#{teacher.salary}" %></td>
+        <td><%= teacher.education %></td>
+        <td><%= link_to 'Show', teacher, class: "btn btn-default" %></td>
+        <td><%= link_to 'Edit', edit_teacher_path(teacher), class: "btn btn-default" %></td>
+        <td><%= link_to 'Destroy', teacher, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Teacher', new_teacher_path, class: "btn btn-default" %>

@@ -1,0 +1,22 @@
+
+<h1>Edit Cohort</h1>
+
+<%= render 'form', cohort: @cohort %>
+
+<h2>Add Student to Cohort</h2>
+
+<%= form_with(model: @student_cohort, local: true) do |form| %>
+    <div class="field">
+    <%= form.collection_select(:student_id, Student.all, :id, :firstname) %>
+    </div>
+      <div class="field">
+    <%= form.hidden_field(:cohort_id, value: "#{@cohort.id}") %>
+    </div>
+      <div class="actions">
+      <%= form.submit "Add Student", class: "btn btn-default" %>
+    </div>
+  <% end %>
+
+
+<%= link_to 'Show', @cohort, class: "btn btn-default" %> |
+<%= link_to 'Back', cohorts_path, class: "btn btn-default" %>

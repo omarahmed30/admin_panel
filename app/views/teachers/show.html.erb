@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @teacher.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @teacher.lastname %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @teacher.age %>
+</p>
+
+<p>
+  <strong>Salary:</strong>
+  <%= "$#{@teacher.salary}" %>
+</p>
+
+<p>
+  <strong>Education:</strong>
+  <%= @teacher.education %>
+</p>
+
+<%= link_to 'Edit', edit_teacher_path(@teacher), class: "btn btn-default" %> |
+<%= link_to 'Back', teachers_path, class: "btn btn-default" %>
