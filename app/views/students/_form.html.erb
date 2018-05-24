@@ -6,9 +6,10 @@
   <div class="form-inputs">
     <%= f.input :firstname %>
     <%= f.input :lastname %>
-    <%= f.input :age, collection: 18..150 %>
-    <%= f.input :education %>
+    <%= f.input :age, collection: 18..149 %>
+    <%= f.select :education, options_for_select(["High School", "College", "PHD"])%>
   </div>
+  <br>
 
   <div class="form-actions">
     <%= f.button :submit, class: "btn btn-default" %>
