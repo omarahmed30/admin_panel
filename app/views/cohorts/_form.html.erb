@@ -8,7 +8,7 @@
     <%= f.input :stratdate, required: true %>
     <%= f.input :enddate, required: true %>
     
-    <h4> Select Course <%= f.collection_select(:course_id, Course.all, :id, :name) %></h4>
+    <h4> Select Course </h4><%= f.association :course %>
     <h4> Select Teacher <%= f.collection_select(:teacher_id, Teacher.all, :id, :lastname) %></h4>
   </div>
   <br>
