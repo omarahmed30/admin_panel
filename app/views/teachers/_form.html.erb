@@ -4,14 +4,15 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.input :firstname %>
-    <%= f.input :lastname %>
-    <%= f.input :age, collection: 18..149 %>
-    <%= f.input :salary %>
-    <%= f.select :education, options_for_select(["High School", "College", "PHD"])%>
+    <%= f.input :firstname, :label => "First Name", required: true %>
+    <%= f.input :lastname, :label => "Last Name", required: true %>
+    <%= f.input :age, collection: 18..149, required: true %>
+    <%= f.input :salary, required: true %>
+    <%= f.input :education, collection: (["High School", "College","Master", "PHD"]), :label => "Education", required: true %>
   </div>
   <br>
   <div class="form-actions">
-    <%= f.button :submit, class: "btn btn-default" %>
+    <%= f.button :submit, "Submit", class: "btn btn-default" %>
   </div>
 <% end %>
+<br>

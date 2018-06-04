@@ -5,10 +5,11 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Stratdate</th>
-      <th>Enddate</th>
+      <th>Cohort Name</th>
+      <th>Start Date</th>
+      <th>End Date</th>
       <th>Course</th>
+      <th>Teacher</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,7 +20,12 @@
         <td><%= cohort.name %></td>
         <td><%= cohort.stratdate %></td>
         <td><%= cohort.enddate %></td>
-        <td><%= cohort.course_id %></td>
+        <td><%= cohort.course.name %></td>
+        <%if cohort.teacher%>
+          <td><%= cohort.teacher.firstname + " " + cohort.teacher.lastname %></td>
+        <%else%>
+          <td><%="TBD"%></td>
+        <%end%>
         <td><%= link_to 'Show', cohort, class: "btn btn-default" %></td>
         <td><%= link_to 'Edit', edit_cohort_path(cohort), class: "btn btn-default" %></td>
         <td><%= link_to 'Destroy', cohort, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>

@@ -8,22 +8,26 @@
 </p>
 
 <p>
-  <strong>Teacher:</strong>
-  <%= @cohort.teacher.firstname + " " + @cohort.teacher.lastname %>
+  <strong>Teacher Name:</strong>
+  <% if @cohort.teacher %>
+    <%= @cohort.teacher.firstname + " " + @cohort.teacher.lastname %>
+    <% elsif %>
+  TBD
+  <% end %>
 </p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Cohort Name:</strong>
   <%= @cohort.name %>
 </p>
 
 <p>
-  <strong>Stratdate:</strong>
+  <strong>Start Date:</strong>
   <%= @cohort.stratdate %>
 </p>
 
 <p>
-  <strong>Enddate:</strong>
+  <strong>End Date:</strong>
   <%= @cohort.enddate %>
 </p>
 
@@ -55,8 +59,8 @@
         <td><%= student.lastname %></td>
         <td><%= student.age %></td>
         <td><%= link_to 'Show', student %></td>
-<!--        <td><%= link_to 'Edit', edit_student_path(student) %></td>
-        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+       <td><%= link_to 'Edit', edit_student_path(student) %></td>
+        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
