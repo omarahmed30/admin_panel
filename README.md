@@ -11,7 +11,7 @@ This easy to use application helps school administrator perform their daily duti
 https://adminpannell.herokuapp.com
 
 * user email 
-`gmail.com`
+`a@gmail.com`
 * user password
 `123456`
 
