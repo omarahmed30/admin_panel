@@ -1,5 +1,7 @@
 # Admin Panel
 
+<img width="1262" alt="screen shot 2018-06-18 at 1 27 38 pm" src="https://user-images.githubusercontent.com/26211014/41552355-82fc516c-72fc-11e8-9b7a-932c1fb44343.png">
+
 I created this admin panel for a school whereby the administrator can create users and complete common administrative tasks.
 
 ## What problem is it solving?
