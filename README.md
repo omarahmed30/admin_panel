@@ -6,7 +6,7 @@ I created this admin panel for a school whereby the administrator can create use
 This easy to use application helps school administrator perform their daily duties with smooth user experience. 
 
 ## Link to the website
-https://adminpanell.herokuapp.com
+https://adminpannell.herokuapp.com
 
 ## Technology used
 
@@ -34,27 +34,4 @@ rails db:create
 rails db:schema:load
 Rails db:seed
 
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
