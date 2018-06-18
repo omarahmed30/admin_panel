@@ -11,9 +11,9 @@ This easy to use application helps school administrator perform their daily duti
 https://adminpannell.herokuapp.com
 
 * user email 
-* o@gmail.com
+`gmail.com`
 * user password
-* 123456
+`123456`
 
 
 ## Technology used
@@ -37,10 +37,10 @@ Postgres was my choice for database and it also works well with heroku.
 * Clone or fork the repository to your local computer.
 * Follow these commands
 
-* rails db:drop
-* rails db:create
-* rails db:schema:load
-* Rails db:seed
+* `rails db:drop`
+* `rails db:create`
+* `rails db:schema:load`
+* `Rails db:seed`
 
 * There is no signup link so just use this url to sign up http://localhost:3000/users/sign_up
 
