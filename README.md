@@ -8,6 +8,12 @@ This easy to use application helps school administrator perform their daily duti
 ## Link to the website
 https://adminpannell.herokuapp.com
 
+* user email 
+* o@gmail.com
+* user password
+* 123456
+
+
 ## Technology used
 
 <img src="http://www.asti.co.in/wp-content/uploads/2017/01/html_icon.png"  width="80px">
@@ -29,9 +35,11 @@ https://adminpannell.herokuapp.com
 * Clone or fork the repository to your local computer.
 * Follow these commands
 
-rails db:drop
-rails db:create
-rails db:schema:load
-Rails db:seed
+* rails db:drop
+* rails db:create
+* rails db:schema:load
+* Rails db:seed
+
+* There is no signup link so just use this url to sign up http://localhost:3000/users/sign_up
 
 
